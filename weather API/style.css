@@ -1,0 +1,60 @@
+/* General page styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #74b9ff, #a29bfe);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Title */
+h1, h2 {
+  color: #fff;
+}
+
+/* Input field for city name */
+#cityInput {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button to fetch weather */
+#fetchWeatherBtn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0984e3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#fetchWeatherBtn:hover {
+  background-color: #00cec9;
+}
+
+/* Result box */
+#weatherResult {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraphs inside result */
+#weatherResult p {
+  font-size: 18px;
+  margin: 8px 0;
+}

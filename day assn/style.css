@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*body background*/
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+
+  /*background image*/
+  background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*overlay*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+/* content */
+header,
+.controls,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/*header*/
+.page-header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid #3498db;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #2980b9;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+}
+
+/*button*/
+.controls {
+  text-align: center;
+  padding: 25px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/*output*/
+.output {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 60px;
+  border-radius: 20px 20px 0 0;
+  line-height: 1.7;
+  transition: all 0.4s ease;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.output h2 {
+  color: #2980b9;
+  border-left: 5px solid #2980b9;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.output ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 3px solid #3498db;
+}
+
+/* responsive design*/
+@media (max-width: 768px) {
+  .output {
+    padding: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 85%;
+    font-size: 15px;
+  }
+}
